@@ -1,0 +1,72 @@
+#parent {
+    background: #EDEFF0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position:fixed;
+    height:60px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+    margin-top: 20px;
+
+
+
+}
+
+.child {
+    /*height: 60px;*/
+}
+
+.child1 {
+    color: darkgrey;
+    /*background: red;*/
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    font-size: 18px;
+    /*margin-left: 25%;*/
+}
+
+.child2 {
+    flex-basis: 50%;
+    flex-shrink: 10;
+    /*background: yellow;*/
+}
+
+.child3 {
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+    /*justify-content: space-between;*/
+}
+
+i {
+    color: darkgrey;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: darkgrey;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    font-weight: 800;
+}
+
+i:hover, i:focus {
+    font-weight: 800;
+
+}
+
+#contactInfo {
+    color: darkgrey;
+}
+
+.fa-envelope {
+    color: darkgrey;
+}

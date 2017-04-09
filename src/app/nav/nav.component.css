@@ -1,0 +1,93 @@
+
+ul > li > a.active, ul > li > a:hover {
+    background-color: silver;
+    color: black;
+
+}
+
+ul > li > a:active {
+    color: black;
+}
+
+.navigation {
+    background-color: #EDEFF0;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    position:fixed;
+    height:74px;
+    top:0px;
+    left:0px;
+    right:0px;
+}
+
+
+
+.child1{
+    align-self: flex-start;
+    /*flex-basis: 50%;*/
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+li {
+    list-style: none;
+    float: left;
+    border-right: 2px solid  #EDEFF0;
+}
+
+li a {
+    display: block;
+    color: darkgrey;
+    padding: 25px;
+    text-decoration: none;
+    text: 20px;
+}
+
+li img {
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+
+li a:active {
+    display: block;
+    color: #EBE4DB;
+    padding: 25px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    height: 52px;
+}
+
+#logo2 {
+    padding-bottom: 3px;
+    padding-right: 6px;
+    padding-left: 10px;
+    padding-top: 7px;
+
+}
+
+.fa-envelope {
+    color: darkgrey;
+}
+
+i {
+    color: darkgrey;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

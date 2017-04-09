@@ -1,0 +1,28 @@
+<div class="navigation">
+  <ul class="child1">
+    <li><a id="logo2" routerLink="/home" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact:true}"><img class="logo" src="../../assets/lonepeak.png"></a></li>
+    <!--<li><a routerLink="/home" routerLinkActive="active"-->
+    <!--[routerLinkActiveOptions]="{exact:true}">Home</a></li>-->
+    <li><a routerLink="/expertise" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact:true}">Expertise</a></li>
+    <li><a routerLink="/about-me" routerLinkActive="active"
+           [routerLinkActiveOptions]="{exact:true}">About Me</a></li>
+    <li><a routerLinkActive="active"
+      (click)="showDialog = !showDialog">Contact</a></li>
+  </ul>
+</div>
+
+
+<app-modal [(visible)]="showDialog">
+  <h1 id="contactInfo">Contact Info</h1>
+  <div><h4>Email: <a href="mailto:ramsaybeecher@gmail.com?subject=Email from my website">
+    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>ramsaybeecher@gmail.com</h4></div>
+  <div><h4>Phone: 801-787-0803</h4></div>
+  <!--<div class="video-wrapper">-->
+  <!--<div class="video-child"><iframe width="640" height="360" src="https://www.youtube.com/embed/6YVBj2o_3mg?autoplay=1"-->
+  <!--frameborder="0" allowfullscreen></iframe></div>-->
+  <!--</div>-->
+  
+  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+</app-modal>

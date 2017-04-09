@@ -1,0 +1,41 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.child {
+    height: 570px;
+    width: 900px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain!important;
+    overflow: hidden;
+    height: 570px;
+}
+
+.carousel-slide {
+    height: 570px;
+    border: none;
+}
+.carousel-slide:active, .carousel-slide:focus, .carousel-slide:hover {
+    background-image: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.carousel-inner:active, .carousel-inner:focus, .carousel-inner:hover {
+    background-image: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.child:active, .child:focus, .child:hover {
+    background-image: none;
+    outline: none;
+    box-shadow: none;
+}
+
+

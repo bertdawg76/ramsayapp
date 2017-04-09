@@ -1,0 +1,17 @@
+<div id="parent">
+  <div class="child child1"><a (click)="showDialog = !showDialog">Contact</a></div>
+  <div class="child child3">
+    <a href="https://m.facebook.com/afton.coleman.35?ref=bookmarks" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+    <a href="https://instagram.com/loveandbuttercreamshop/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+  </div>
+
+</div>
+
+<app-modal [(visible)]="showDialog">
+  <h1 id="contactInfo">Contact Info</h1>
+  <div><h4>Email: <a href="mailto:ramsaybeecher@gmail.com?subject=Email from my website">
+    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>ramsaybeecher@gmail.com</h4></div>
+  <div><h4>Phone: 801-787-0803</h4></div>
+  <button (click)="showDialog = !showDialog" class="btn">Close</button>
+</app-modal>

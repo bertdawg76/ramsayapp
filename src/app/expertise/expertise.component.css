@@ -35,55 +35,19 @@
 
 }
 
-.services {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    margin-left: 30px;
-}
- .one {
-     width: 80px;
-     height: 80px;
-     background-image: url('../../assets/infrared.jpg');
-     background-size: cover;
-     display: block;
-     border-radius: 40px;
-     -webkit-border-radius: 40px;
-     -moz-border-radius: 40px;
 
-
- }
-
- .two {
-     width: 80px;
-     height: 80px;
-     background-image: url('../../assets/oldhouse.jpg');
-     background-size: cover;
-     display: block;
-     border-radius: 40px;
-     -webkit-border-radius: 40px;
-     -moz-border-radius: 40px;
-     margin-top: 15px;
-     margin-bottom: 15px;
-
- }
-
- .three {
-     width: 80px;
-     height: 80px;
-     background-image: url('../../assets/moldhouse.jpg');
-     background-size: cover;
-     display: block;
-     border-radius: 40px;
-     -webkit-border-radius: 40px;
-     -moz-border-radius: 40px;
- }
 
 .gif-house {
-    width: 60%;
+    width: 40%;
     align-self: center;
 
+}
+.list{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bottom {

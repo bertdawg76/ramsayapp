@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     position:fixed;
-    height:60px;
+    height:80px;
     bottom:0px;
     left:0px;
     right:0px;
@@ -22,7 +22,7 @@
 .child1 {
     color: darkgrey;
     /*background: red;*/
-    flex-basis: 50%;
+    flex-basis: 15%;
     align-self: center;
     text-align: center;
     font-size: 18px;
@@ -30,13 +30,13 @@
 }
 
 .child2 {
-    flex-basis: 50%;
+    flex-basis: 20%;
     flex-shrink: 10;
     /*background: yellow;*/
 }
 
 .child3 {
-    flex-basis: 50%;
+    flex-basis: 35%;
     align-self: center;
     text-align: center;
     /*justify-content: space-between;*/
@@ -54,12 +54,12 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:focus {
-    font-weight: 800;
+a:hover {
+    font-weight: bold;
 }
 
 i:hover, i:focus {
-    font-weight: 800;
+    font-weight: bold;
 
 }
 
@@ -69,4 +69,21 @@ i:hover, i:focus {
 
 .fa-envelope {
     color: darkgrey;
+}
+
+.ethicHeader {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.logo {
+    width: 100%;
+    max-width: 100px;
+    height: 60px;
+    /*padding-left:10px;*/
+}
+.logoRight {
+    margin-left: 50px;
 }

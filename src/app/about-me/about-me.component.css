@@ -19,7 +19,7 @@
 }
 
 .header {
-    height: 25%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -71,7 +71,7 @@
 .pic-circle {
     width: 300px;
     height: 300px;
-    background-image: url('https://lonepeakhomeinspection.com/wp-content/uploads/2016/12/lone-peak-home-inspection-4-1200x1200.png');
+    background-image: url('../../assets/Familypic.jpg');
     background-size: cover;
     display: block;
     border-radius: 150px;

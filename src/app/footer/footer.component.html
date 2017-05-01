@@ -1,17 +1,63 @@
 <div id="parent">
   <div class="child child1"><a (click)="showDialog = !showDialog">Contact</a></div>
+  <div class="child child1"><a (click)="showModal = !showModal">Code of Ethics</a></div>
+  <div class="child child1"><a href="https://www.nachi.org/sop.htm" target="_blank">Standard of Practice</a> </div>
+  <div class="child child2"></div>
   <div class="child child3">
-    <a href="https://m.facebook.com/afton.coleman.35?ref=bookmarks" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-    <a href="https://instagram.com/loveandbuttercreamshop/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="https://pinterest.com" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+    <a><img class="logo" src="../../assets/image01.jpg"></a>
+    <a><img class="logo logoRight" src="../../assets/image00.png"></a>
+    <!--<a href="#" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>-->
+    <!--<a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>-->
+    <!--<a href="#" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>-->
   </div>
 
 </div>
 
 <app-modal [(visible)]="showDialog">
   <h1 id="contactInfo">Contact Info</h1>
-  <div><h4>Email: <a href="mailto:ramsaybeecher@gmail.com?subject=Email from my website">
-    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>ramsaybeecher@gmail.com</h4></div>
+  <div><h4>Email: <a href="mailto:LONEPEAKHOMEINSPECTION@GMAIL.COM?subject=Email from my website">
+    <i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>LonePeakHomeInspection@gmail.com</h4></div>
   <div><h4>Phone: 801-787-0803</h4></div>
   <button (click)="showDialog = !showDialog" class="btn">Close</button>
 </app-modal>
+<app-code-ethics [(visible)]="showModal">
+  <ol><div class="ethicHeader">1. Duty to the Public</div>
+    <li>The InterNACHI member shall abide by the Code of Ethics and substantially follow the InterNACHI Standards of Practice.</li>
+    <li>The InterNACHI member shall not engage in any practices that could be damaging to the public or bring discredit to the home inspection industry.</li>
+    <li>The InterNACHI member shall be fair, honest and impartial, and act in good faith in dealing with the public.</li>
+    <li>The InterNACHI member shall not discriminate in any business activities on the basis of race, color, religion, sex, national origin, familial status, sexual orientation, or handicap, and shall comply with all federal, state and local laws concerning discrimination.</li>
+    <li>The InterNACHI member shall be truthful regarding his/her services and qualifications.</li>
+    <li>The InterNACHI member shall not:
+      <ol>
+        <li>have any disclosed or undisclosed conflict of interest with the client;</li>
+        <li>accept or offer any disclosed or undisclosed commissions, rebates, profits, or other benefit from real estate agents, brokers, or any third parties having financial interest in the sale of the property; or</li>
+        <li>offer or provide any disclosed or undisclosed financial compensation directly or indirectly to any real estate agent, real estate broker, or real estate company for referrals or for inclusion on lists of preferred and/or affiliated inspectors or inspection companies.</li>
+      </ol>
+    </li>
+    <li>The InterNACHI member shall not release any information about the inspection or the client to a third party unless doing so is necessary to protect the safety of others, to comply with a law or statute, or both of the following conditions are met:
+      <ol>
+        <li>
+          the client has been made explicitly aware of what information will be released, to whom, and for what purpose, and;
+        </li>
+        <li>the client has provided explicit, prior written consent for the release of his/her information.</li>
+      </ol>
+    </li>
+    <li>The InterNACHI member shall always act in the interests of the client unless doing so violates a law, statute, or this Code of Ethics.</li>
+    <li>The InterNACHI member shall use a written contract that specifies the services to be performed, limitations of services, and fees.</li>
+    <li>The InterNACHI member shall comply with all government rules and licensing requirements of the jurisdiction where he or she conducts business.</li>
+    <li>The InterNACHI member shall not perform or offer to perform, for an additional fee, any repairs or associated services to the structure for which the member or member's company has prepared a home inspection report for a period of 12 months. This provision shall not include services to components and/or systems that are not included in the InterNACHI Standards of Practice.</li>
+  </ol>
+  <ol><div class="ethicHeader">2. Duty to Continue Education</div>
+    <li>
+      The InterNACHI member shall comply with InterNACHI's current Continuing Education requirements.</li>
+    <li>The InterNACHI member shall pass InterNACHI's Online Inspector Exam once every three years</li>
+  </ol>
+  <ol><div class="ethicHeader">3. Duty to the Profession and to InterNACHI</div>
+    <li>The InterNACHI member shall strive to improve the home inspection industry by sharing his/her lessons and/or experiences for the benefit of all. This does not preclude the member from copyrighting or marketing his/her expertise to other Inspectors or the public in any manner permitted by law.</li>
+    <li>The InterNACHI member shall assist the InterNACHI leadership in disseminating and publicizing the benefits of InterNACHI membership.</li>
+    <li>The InterNACHI member shall not engage in any act or practice that could be deemed damaging, seditious or destructive to InterNACHI, fellow InterNACHI members, InterNACHI employees, leadership or directors. Accusations of a member acting or deemed in violation of such rules shall trigger a review by the Ethics Committee for possible sanctions and/or expulsion from InterNACHI.</li>
+    <li>The InterNACHI member shall abide by InterNACHI's current membership requirements.</li>
+    <li>The InterNACHI member shall abide by InterNACHI's current message board rules.</li>
+  </ol>
+  <button (click)="showModal = !showModal" class="btn">Close</button>
+</app-code-ethics>

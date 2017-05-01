@@ -18,6 +18,8 @@ import { ContactComponent } from './contact/contact.component';
 import 'hammerjs';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
+import { CodeEthicsComponent } from './code-ethics/code-ethics.component';
+import { AdditionalComponent } from './additional/additional.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { ModalComponent } from './modal/modal.component';
     NavComponent,
     ContactComponent,
     CarouselComponent,
-    ModalComponent
+    ModalComponent,
+    CodeEthicsComponent,
+    AdditionalComponent
   ],
   imports: [
     BrowserModule,
